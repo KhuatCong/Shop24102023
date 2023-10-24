@@ -23,6 +23,8 @@
 </head>
 
 <body>
+
+    <!-- my header -->
     <header class="header">
         <div class="container">
             <div class="header-pc">
@@ -75,6 +77,7 @@
         </div>
     </header>
 
+    <!-- menu mobile -->
     <div class="menu-mobile" id="menu-mobile">
         <div class="logo">
             <!-- <a href="index.html">
@@ -87,16 +90,17 @@
         <div class="menu">
             <ul class="ul-reset cha" id="cha">
                 <li class="item-cha"><a href=""><i class="fa-solid fa-house me-2"></i>Trang chủ</a></li>
-                <li class="item-cha"><a data-bs-toggle="collapse" href="#collapse-cate"><i class="fa-solid fa-box me-2"></i>Sản phẩm
-                    <span>
-                        <i class="fa-solid fa-caret-down"></i>
-                    </span>
-                </a>
+                <li class="item-cha"><a data-bs-toggle="collapse" href="#collapse-cate"><i
+                            class="fa-solid fa-box me-2"></i>Sản phẩm
+                        <span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </a>
                     <ul class="ul-reset con collapse" data-bs-parent="#cha" id="collapse-cate">
-                        <li class="item-con"><a href="">Thời trang nam</a></li>
-                        <li class="item-con"><a href="">Thời trang nữ</a></li>
-                        <li class="item-con"><a href="">Thời trang hè</a></li>
-                        <li class="item-con"><a href="">Thời trang thu đông</a></li>
+                        <li class="item-con"><a href="">Lenovo</a></li>
+                        <li class="item-con"><a href="">Dell</a></li>
+                        <li class="item-con"><a href="">Macbook</a></li>
+                        <li class="item-con"><a href="">Phụ kiện</a></li>
                     </ul>
                 </li>
                 <li class="item-cha"><a href=""><i class="fa-solid fa-tag me-2"></i>Khuyến mãi</a></li>
@@ -108,7 +112,7 @@
                         <span>
                             <i class="fa-solid fa-caret-down"></i>
                         </span>
-                        </a>
+                    </a>
                     <ul id="collapse-user" class="ul-reset con collapse" data-bs-parent="#cha">
                         <li class="item-con"><a href="">Thông tin tài khoản</a></li>
                         <li class="item-con"><a href="">Thoát tài khoản</a></li>
@@ -119,30 +123,479 @@
 
     </div>
 
+    <!-- màn hình đen mobile -->
     <div class="overlay" id="overlay" onclick="closeNav()"></div>
 
-    <div class="banner-content">
-        <div class="content-slide-home">
-
-            <div class="item-banner">
-                <img src="assets/image/banner/banner-qua-tet-03.jpg" alt="">
+    <section class="content">
+        <!-- slide banner -->
+        <div class="banner-content">
+            <div class="content-slide-home">
+                <div class="item-banner">
+                    <img src="assets/image/banner/banner-qua-tet-03.jpg" alt="">
+                </div>
+                <div class="item-banner">
+                    <img src="assets/image/banner/banner-laptop-sinh-vien-scaled.jpg" alt="">
+                </div>
             </div>
-            <div class="item-banner">
-                <img src="assets/image/banner/banner-laptop-sinh-vien-scaled.jpg" alt="">
+            <div class="btn-wrap">
+                <span class="prev-banner"><i class="fa-solid fa-angle-left"></i></span>
+                <span class="next-banner"><i class="fa-solid fa-angle-right"></i></span>
             </div>
         </div>
-        <div class="btn-wrap">
-            <span class="prev"><i class="fa-solid fa-angle-left"></i></span>
-            <span class="next"><i class="fa-solid fa-angle-right"></i></span>
-        </div>
-    </div>
 
-    <div class="container mt-4">
-        <div class="menu-category">
-            
+        <!-- big sale product -->
+        <div class="container mt-4">
+            <div class="big-sale">
+                <div class="head">
+                    <div class="title">
+                        big sale
+                    </div>
+                    <div class="next">
+                        <a href="">Xem thêm <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="list-sale">
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="assets/image/product/lenovo1.jpg" alt="">
+                            </a>
+                            <div class="discount">
+                                -50%
+                            </div>
+                        </div>
+                        <div class="body">
+                            <a class="name" href="">Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                            </a>
+                            <div class="price">
+                                15,900,000 đ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="assets/image/product/lenovo2.jpg" alt="">
+                            </a>
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="body">
+                            <a class="name" href="">Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                            </a>
+                            <div class="price">
+                                15,900,000 đ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="assets/image/product/chuot1.jpeg" alt="">
+                            </a>
+                            <div class="discount">
+                                -50%
+                            </div>
+                        </div>
+                        <div class="body">
+                            <a class="name" href="">Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                            </a>
+                            <div class="price">
+                                15,900,000 đ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="assets/image/product/banphim1.jfif" alt="">
+                            </a>
+                            <div class="discount">
+                                -50%
+                            </div>
+                        </div>
+                        <div class="body">
+                            <a class="name" href="">Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                            </a>
+                            <div class="price">
+                                15,900,000 đ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="assets/image/product/macbook1.png" alt="">
+                            </a>
+                            <div class="discount">
+                                -50%
+                            </div>
+                        </div>
+                        <div class="body">
+                            <a class="name" href="">Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                            </a>
+                            <div class="price">
+                                15,900,000 đ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="assets/image/product/dell1.png" alt="">
+                            </a>
+                            <div class="discount">
+                                -50%
+                            </div>
+                        </div>
+                        <div class="body">
+                            <a class="name" href="">Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                            </a>
+                            <div class="price">
+                                15,900,000 đ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="">
+                                <img src="assets/image/product/banphim1.jfif" alt="">
+                            </a>
+                            <div class="discount">
+                                -50%
+                            </div>
+                        </div>
+                        <div class="body">
+                            <a class="name" href="">Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                            </a>
+                            <div class="price">
+                                15,900,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-big-sale">
+                    <span class="prev-sale"><i class="fa-solid fa-angle-left"></i></span>
+                    <span class="next-sale"><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+            </div>
         </div>
-    </div>
 
+        <!-- shopping now -->
+        <div class="container mt-4">
+            <div class="box-shopping">
+                <div class="title">
+                    Shopping ngay hôm nay
+                </div>
+                <div class="product">
+                    <div class="row row-cols-xl-6 g-3">
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/dell1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/banphim1.jfif" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/chuot1.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/chuot2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/dell2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/lenovo1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/lenovo2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/macbook1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/lenovo1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/lotchuot1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/dell4.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="item">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="assets/image/product/tainghe1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="body">
+                                    <a class="name" href="">
+                                        Lenovo Thinkpad X1 Carbon Gen 4 i5/8GB/256GB (Like New)
+                                    </a>
+                                    <div class="price">
+                                        20,500,000 đ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="btn-next">
+                    <span>
+                        Xem thêm
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-pc">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="box">
+                            <div class="logo">
+                                <a href="">
+                                    <img src="assets/image/logo/logo-footer.png" alt="">
+                                </a>
+                            </div>
+                            <div class="body">
+                                <div class="title">
+                                    CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG VICO NEXT
+                                </div>
+                                <div class="list">
+                                    <ul class="ul-reset">
+                                        <li><i class="fa-solid fa-location-pin me-2"></i>Địa chỉ: Số 27 LK11, Khu đô thị
+                                            Xa La, Hà Đông, Hà Nội</li>
+                                        <li><i class="fa-solid fa-envelope me-1"></i>Email: viconext@vico.vn</li>
+                                        <li><i class="fa-solid fa-phone me-1"></i>Hotline: 0918585505</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="logo-footer">
+                            <div class="box">
+                                <div class="body">
+                                    <div class="title">
+                                        Liên kết nhanh
+                                    </div>
+                                    <div class="list">
+                                        <ul class="ul-reset">
+                                            <li><a href="">Về chúng tôi</a></li>
+                                            <li><a href="">Hướng dẫn</a></li>
+                                            <li><a href="">Giới thiệu</a></li>
+                                            <li><a href="">Tin tức</a></li>
+                                            <li><a href="">Liên hệ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="logo-footer">
+                            <div class="box">
+                                <div class="body">
+                                    <div class="title">
+                                        Hỗ trợ
+                                    </div>
+                                    <div class="list">
+                                        <ul class="ul-reset">
+                                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                                            <li><a href="">Chính sách bảo mật thông tin</a></li>
+                                            <li><a href="">Điều khoản điều kiện</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="logo-footer">
+                            <div class="box">
+                                <div class="body">
+                                    <div class="title">
+                                        Theo dõi chúng tôi
+                                    </div>
+                                    <div class="page">
+                                        <iframe
+                                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThietkewebsite.vico&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                            width="100%" height="130" style="border:none;overflow:hidden" scrolling="no"
+                                            frameborder="0" allowfullscreen="true"
+                                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            © 2023 Copyright by 24102023. All rights reserved
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -1,22 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.ul-reset{
+
+.ul-reset {
     list-style: none;
     margin: 0;
     padding: 0;
-    
+
 }
-a{
+
+a {
     text-decoration: none !important;
 }
-html{
+
+html {
     font: {
-        family:'Roboto',sans-serif;
+        family: 'Roboto', sans-serif;
     }
-    body{
-    background-color: #FDF5E6;
+
+    body {
+        background-color: #F5F5F5;
+        background-image: url(../image/bg/12459189_job516-namcha-07.jpg);
     }
 }
