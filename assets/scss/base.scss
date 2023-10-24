@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ul-reset{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none !important;
+}
+html{
+    font: {
+        family:'Roboto',sans-serif;
+    }
+    body{
+    background-color: #FDF5E6;
+    }
+}
