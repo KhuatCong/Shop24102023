@@ -62,7 +62,7 @@ header {
 }
 .header-pc .top-header .user-header .user-action .user {
   color: #fff;
-  background-color: #f18833;
+  background-color: #f5b442;
   border-radius: 5px;
   margin-right: 20px;
   transition: 0.3s;
@@ -83,7 +83,7 @@ header {
   color: #fff;
 }
 .header-pc .top-header .user-header .cart-action .cart a i {
-  background-color: #f18833;
+  background-color: #f5b442;
   padding: 6px;
   border-radius: 3px;
   transition: 0.3s;
@@ -106,7 +106,7 @@ header {
   margin: 0 20px;
 }
 .header-pc .search-header button {
-  background-color: #f18833;
+  background-color: #f5b442;
   color: #fff;
 }
 
@@ -202,7 +202,7 @@ header {
 
 .btn-wrap span {
   position: absolute;
-  background-color: #8883f1;
+  background-color: #f5b442;
   border-radius: 50%;
   padding: 10px 16px;
   color: #fff;
@@ -253,7 +253,8 @@ header {
 }
 .big-sale .list-sale .item {
   position: relative;
-  background-color: #fff;
+  background-color: #f5b442;
+  border-radius: 5px;
 }
 .big-sale .list-sale .item .img {
   border: 5px solid #8883f1;
@@ -304,7 +305,7 @@ header {
 }
 .big-sale .btn-big-sale span {
   position: absolute;
-  background-color: #8883f1;
+  background-color: #f5b442;
   border-radius: 50%;
   padding: 2px 8px;
   color: #fff;
@@ -313,10 +314,10 @@ header {
   cursor: pointer;
 }
 .big-sale .btn-big-sale span:first-child {
-  left: 10px;
+  left: 13px;
 }
 .big-sale .btn-big-sale span:last-child {
-  right: 10px;
+  right: 13px;
 }
 
 .box-shopping .title {
@@ -328,7 +329,8 @@ header {
   font-weight: bold;
 }
 .box-shopping .product .item {
-  background-color: #fff;
+  background-color: #f5b442;
+  border-radius: 5px;
 }
 .box-shopping .product .item .img {
   overflow: hidden;
@@ -409,7 +411,7 @@ footer .footer-pc .box .body .list li a {
   color: black;
 }
 footer .footer-pc .box .body .list li a:hover {
-  color: aqua;
+  color: #8883f1;
 }
 
 .copy {
