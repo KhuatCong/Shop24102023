@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/back-top.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản trị</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="logo-header-admin">
+                <a href="index.html">
+                    <img src="assets/image/logo/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container-fluid p-4">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3">
+                    <div class="logo-dashboard text-center">
+                        <a href="admin-dashboard.html">
+                            <img src="assets/image/logo/logo-admin.PNG" alt="">
+                        </a>
+                    </div>
+                    <div class="name-admin">
+                        Khuất Phú Công
+                    </div>
+                    <div class="menu-admin" id="menu-admin">
+                        <ul class="ul-reset">
+                            <li class="mb-2">
+                                <a class="root" href="admin.html">
+                                    <i class="fa-solid fa-gauge me-2"></i>
+                                    Tổng quan
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="root" href="#a1" data-bs-toggle="collapse">
+                                    <i class="fa-solid fa-box me-2"></i>
+                                    Quản lý sản phẩm
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </a>
+                                <ul class="ul-reset collapse" id="a1" data-bs-parent="#menu-admin">
+                                    <li><a class="root-c" href="admin-all-product.html">Danh sách sản phẩm</a></li>
+                                    <li><a class="root-c" href="admin-all-category.html">Danh mục sản phẩm</a></li>
+                                    <li><a class="root-c" href="admin-add-product.html">Thêm sản phẩm</a></li>
+                                    <li><a class="root-c" href="admin-add-category.html">Thêm danh mục sản phẩm</a></li>
+                                </ul>
+                            </li>
+                            <li class="mb-2">
+                                <a class="root" href="#a2" data-bs-toggle="collapse">
+                                    <i class="fa-solid fa-users me-2"></i>
+                                    Quản lý người dùng
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </a>
+                                <ul class="ul-reset collapse" id="a2" data-bs-parent="#menu-admin">
+                                    <li><a class="root-c" href="admin-all-user.html">Danh sách người dùng</a></li>
+                                    <li><a class="root-c" href="admin-add-user.html">Thêm người dùng mới</a></li>
+                                </ul>
+                            </li>
+                            <li class="mb-2">
+                                <a class="root" href="#a3" data-bs-toggle="collapse">
+                                    <i class="fa-solid fa-box me-2"></i>
+                                    Quản lý đơn hàng
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </a>
+                                <ul class="ul-reset collapse" id="a3" data-bs-parent="#menu-admin">
+                                    <li><a class="root-c" href="admin-all-order.html">Tất cả đơn hàng</a></li>
+                                </ul>
+                            </li>
+                            <li class="mb-2"><a class="root" href=""><i class="fa-solid fa-shop me-2"></i>Quản lý thông
+                                    tin shop</a>
+                            </li>
+                            <li class="mb-2"><a class="root" href="index.html"><i class="fa-solid fa-shop me-2"></i>Đi
+                                    tới shop</a>
+                            </li>
+                            <li><a class="root" href="index.html"><i
+                                        class="fa-solid fa-right-from-bracket me-2"></i>Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-9 ">
+                    <div class="title-dashboard mt-3 mt-md-0">
+                        Danh sách sản phẩm
+                    </div>
+
+                    <a class="add-product" href="admin-add-product.html">
+                        <i class="fa-solid fa-circle-plus me-1"></i>Thêm sản phẩm
+                    </a>
+
+                    <div class="box-product">
+                        <div class="search-box">
+                            <form action="">
+                                <div class="row">
+                                    <!-- <div class="col-lg-4 col-6">
+                                        <div class="form-group">
+                                            <label for="">Danh mục</label>
+                                            <select name="" id="" class="form-select form-select-sm">
+                                                <option value="">Tất cả danh mục</option>
+                                                <option value="">Dell</option>
+                                                <option value="">Lenovo</option>
+                                                <option value="">Macbook</option>
+                                                <option value="">Phụ kiện</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <div class="form-group">
+                                            <label for="">Sắp xếp</label>
+                                            <select name="" id="" class="form-select form-select-sm">
+                                                <option value="">Mới nhất</option>
+                                                <option value="">Giá thấp đến cao</option>
+                                                <option value="">Giá cao đến thấp</option>
+                                                <option value="">Nổi bật</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-lg-4 col-6">
+                                        <div class="form-group">
+                                            <label for="">Tìm kiếm</label>
+                                            <input id="myInput" type="text" placeholder="Từ khóa..."
+                                                class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <button type="submit">Tìm kiếm</button> -->
+                            </form>
+                        </div>
+
+                        <!-- <p class="my-2">Có tổng <strong>1</strong> sản phẩm</p> -->
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead class="table-dark">
+                                    <tr class="text-truncate">
+                                        <th style="width: 50px;">STT</th>
+                                        <th style="width: 120px;">Ảnh</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Danh mục</th>
+                                        <th style="width: 100px;">Lượt xem</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable">
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a class="img" href="">
+                                                <img src="assets/image/product/banphim1.jfif" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="name">Bàn Phím Gaming K618 Super Pro New 2023 Led Đổi Màu 10 Chế Độ
+                                            Led Khác Nhau
+                                            Ngang Phím Cơ PC - XSMART</td>
+                                        <td>Phụ kiện</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="">Sửa</a>
+                                            -
+                                            <a class="red" href="">Xóa</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a class="img" href="">
+                                                <img src="assets/image/product/chuot1.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="name">Chuột Không Dây Fuhlen B09s Dual Modes Silent Switch Giảm Ồn
+                                            DPI 4000 - Bảo Hành 2 Năm</td>
+                                        <td>Phụ kiện</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="">Sửa</a>
+                                            -
+                                            <a class="red" href="">Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <a class="img" href="">
+                                                <img src="assets/image/product/macbook1.png" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="name">Máy tính xách tay Apple MacBook Air (2020) M1 Chip, 13.3-inch,
+                                            8GB, 256GB SSD</td>
+                                        <td>Macbook</td>
+                                        <td>5</td>
+                                        <td>
+                                            <a href="">Sửa</a>
+                                            -
+                                            <a class="red" href="">Xóa</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="back-to-top" title="Back to Top">&Hat;</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

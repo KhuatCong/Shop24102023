@@ -93,127 +93,60 @@
                 </div>
                 <div class="col-xl-10 col-lg-9 ">
                     <div class="title-dashboard mt-3 mt-md-0">
-                        Tổng quan
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <a class="overview-card" href="" style="border-left: 5px solid green;">
-                                <div class="overview-item">
-                                    <div class="title">
-                                        Tổng sản phẩm
-                                    </div>
-                                    <div class="value">
-                                        0
-                                    </div>
-                                </div>
-                                <div class="update">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                    Cập nhật liên tục
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <a class="overview-card" href="" style="border-left: 5px solid blue;">
-                                <div class="overview-item">
-                                    <div class="title">
-                                        Tổng đơn hàng
-                                    </div>
-                                    <div class="value">
-                                        5
-                                    </div>
-                                </div>
-                                <div class="update">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                    Cập nhật liên tục
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <a class="overview-card" href="" style="border-left: 5px solid red;">
-                                <div class="overview-item">
-                                    <div class="title">
-                                        Tổng lượt xem sản phẩm
-                                    </div>
-                                    <div class="value">
-                                        100
-                                    </div>
-                                </div>
-                                <div class="update">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                    Cập nhật liên tục
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <a class="overview-card" href="" style="border-left: 5px solid orange;">
-                                <div class="overview-item">
-                                    <div class="title">
-                                        Tổng sản phẩm đã bán hôm nay
-                                    </div>
-                                    <div class="value">
-                                        0
-                                    </div>
-                                </div>
-                                <div class="update">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                    Cập nhật liên tục
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <a class="overview-card" href="" style="border-left: 5px solid violet;">
-                                <div class="overview-item">
-                                    <div class="title">
-                                        Doanh thu hôm nay
-                                    </div>
-                                    <div class="value">
-                                        0
-                                    </div>
-                                </div>
-                                <div class="update">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                    Cập nhật liên tục
-                                </div>
-                            </a>
-                        </div>
+                        Thêm sản phẩm
                     </div>
 
-                    <div class="row">
-                        <div class="col-xl-6 col-12">
-                            <div class="box-top">
-                                <div class="title">
-                                    Biểu đồ thống kê doanh thu gần nhất
+                    <a class="all-product" href="admin-all-product.html">
+                        <i class="fa-solid fa-list me-1"></i>Danh sách sản phẩm
+                    </a>
+
+                    <div class="box-add-product">
+                        <form action="">
+                            <div class="row mb-3">
+                                <div class="col-lg-3">
+                                    <label for="">Tên sản phẩm</label>
                                 </div>
-                                <div class="content">
-                                    <canvas id="myChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mt-3 mt-md-0">
-                            <div class="box-top">
-                                <div class="title">
-                                    Top 10 sản phẩm xem nhiều nhất
-                                </div>
-                                <div class="content">
-                                    top1
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control form-control-sm" style="box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);">
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mt-3 mt-md-0">
-                            <div class="box-top">
-                                <div class="title">
-                                    Top 10 sản phẩm bán chạy nhất
+                            <div class="row mb-3">
+                                <div class="col-lg-3">
+                                    <label for="">Danh mục</label>
                                 </div>
-                                <div class="content">
-                                    top1
+                                <div class="col-lg-3">
+                                    <select name="" id="" class="form-select form-select-sm">
+                                        <option value="">Danh mục</option>
+                                        <option value="">Lenovo</option>
+                                        <option value="">Macbook</option>
+                                        <option value="">Dell</option>
+                                        <option value="">Phụ kiện</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-3">Danh sách ảnh</div>
+                                <div class="col-lg-9">
+                                    <div class="alert alert-success">
+                                        <input type="file" name="" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-9"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-9"></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <div id="back-to-top" title="Back to Top">&Hat;</div>
